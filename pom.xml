@@ -29,20 +29,20 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
-				
+
 				<configuration>
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
-						<muleVersion>${app.runtime}</muleVersion>
 						<username>pxkhodnnqeropeuspp</username>
 						<password>Pxkhodnnqeropeuspp1</password>
-						<applicationName>ci-cd-test-dev</applicationName>
+						<muleVersion>${app.runtime}</muleVersion>
 						<environment>Sandbox</environment>
 						<workers>1</workers>
 						<workerType>Micro</workerType>
 						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
+
 			</plugin>
 		</plugins>
 	</build>
